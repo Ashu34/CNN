@@ -38,7 +38,7 @@ def maxpool(X,F,S):
  	
  	return out_vol.reshape(c,c,X.shape[2])
 
-def col2im(im2col,P,F,X,S):
+def col2im(im2col,P,F,X,S): # list having the dimesions of the output signal or the corresponding signal to im2col
 	X[0]=X[0]+2*P
 	X[1]=X[1]+2*P
 	a=X[0]
